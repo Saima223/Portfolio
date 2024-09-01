@@ -95,7 +95,7 @@ nav ul li a:hover:after {
   font-weight: 900;
   line-height: 90px;
   text-transform: inherit;
-  width: 70%;
+  width: 100%;
 }
 .content h1 span {
   color: #fd4766;
