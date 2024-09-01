@@ -106,3 +106,23 @@ nav ul li a:hover:after {
   margin-top: 25px;
   margin-bottom: 30px;
 }
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.4rem;
+  margin-top: 1.7rem;
+}
+.social a {
+  color: #1c99fe;
+  font-size: 1rem;
+  border: 1.6px solid #1c99fe;
+  border-radius: 50%;
+  padding: .25rem;
+  text-align: center;
+  width: 35px;
+}
+.social a:hover {
+  color: #7644ff;
+  box-shadow: 0 0 20px #fd4766;
+  transition: all .3s ease-in-out;
+}
