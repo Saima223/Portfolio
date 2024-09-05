@@ -14,7 +14,6 @@
 
 a {
   text-decoration: none;
-
 }
 
 .hero {
@@ -48,6 +47,7 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #fd4766;
+  text-decoration: none;
 }
 
 nav ul li a:after {
@@ -59,6 +59,7 @@ nav ul li a:after {
   background: #fd4766;
   transition: 0.3s;
   bottom: 0;
+  border-radius: 5px;
 }
 
 nav ul li a:hover:after {
@@ -103,7 +104,7 @@ nav ul li a:hover:after {
       #1c99fe 20.69%,
       #7644ff 50.19%,
       #fd4766 79.69%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
