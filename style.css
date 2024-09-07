@@ -25,7 +25,7 @@ a {
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;  
+  justify-content: space-between;
   padding: 30px 10px;
 }
 
@@ -177,4 +177,57 @@ ul {
 
 li {
   cursor: pointer;
+}
+
+#contact {
+  background-color: white;
+  color: black;
+  padding: 100px 0;
+  position: relative;
+}
+
+#contact .container {
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#contact h2 span {
+  color: #fd4766;
+}
+
+#contact p {
+  font-size: 18px;
+  margin-bottom: 40px;
+  opacity: 0.8;
+}
+
+.btn-custom {
+  color: #fff;
+  background: #fd4766;
+  border: 2px solid #fd4766;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+}
+
+.btn-custom:hover {
+  background: transparent;
+  color: #fd4766;
+  text-decoration: none;
+}
+
+.footer-text {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 14px;
+  opacity: 0.7;
 }
