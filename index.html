@@ -13,38 +13,67 @@
 
 <body>
   <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#home"><img src="/img/logo.jpg" alt="Logo"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-        <a href="https://drive.google.com/file/" target="_blank" class="btn btn-custom ms-3">Resume</a>
+  <div class="container">
+    <a class="navbar-brand" href="#home"><b>Saima</b></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+      <a href="https://drive.google.com/file/" target="_blank" class="btn btn-custom ms-3">Resume</a>
+      <!-- Dark mode toggle -->
+      <div class="dark-mode-toggle ms-3">
+        <input type="checkbox" id="darkModeToggle" class="dark-mode-input">
+        <label for="darkModeToggle" class="dark-mode-label">
+          <i class="bi bi-sun-fill" id="sunIcon"></i>
+          <i class="bi bi-moon-fill" id="moonIcon"></i>
+        </label>
       </div>
     </div>
-  </nav>
-
+  </div>
+</nav>
   <section id="home" class="hero">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 hero-content">
-          <span class="title"><b>Hello, I'm Saima.</b></span>
-          <h1>I build things for <span>the web.</span></h1>
-          <p class="lead">A passionate Web Programmer based in Mumbai, India.</p>
-          <div class="social-icons mt-4">
-            <a href="https://github.com/Saima223" target="_blank"><i class="bi bi-github"></i></a>
-            <a href="https://www.linkedin.com/in/saima223/" target="_blank"><i class="bi bi-linkedin"></i></a>
-          </div>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 hero-content">
+        <span class="title"><b>Hello, I'm Saima.</b></span>
+        <h1>I build things for <span>the web.</span></h1>
+        <p class="lead">A passionate Web Programmer based in Mumbai, India.</p>
+        <div class="social-icons mt-4">
+          <a href="https://github.com/Saima223" target="_blank"><i class="bi bi-github"></i></a>
+          <a href="https://www.linkedin.com/in/saima223/" target="_blank"><i class="bi bi-linkedin"></i></a>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="container">
+    <h1 class="text-center mb-5"><b>About Me</b></h1>
+    <div class="row">
+      <div class="col-lg-6 mb-4">
+        <div class="about-content">
+          <h3>Who I am</h3>
+          <p>Hi! I'm Saima, a passionate web programmer based in Mumbai, India. I am pursuing BBA(Computer application),<br></p>
+          <p>My journey in web development began 2 years ago, and since then, I've been committed to continuous
+            learning, keeping up with the latest technologies and industry best practices.</p>
+          <p>Apart from coding, some other activities that I love to do!<br><br>
+             Designing, Drawing<br>
+             Writting Tech Blogs<br>
+             Travelling</p>
+          <a href="#contact" class="btn btn-custom mt-3">Let's Connect</a>
+        </div>
+      </div>
+      <div class="col-lg-6 mb-4">
         <div class="tech-stack">
-          <p>Tech Stack</p>
+          <h3>Tech Stack</h3>
           <div class="logos">
             <ul>
               <li><img src="https://skillicons.dev/icons?i=html" alt="HTML Icon"></li>
@@ -58,107 +87,46 @@
               <li><img src="https://skillicons.dev/icons?i=express" alt="Express Icon"></li>
               <li><img src="https://skillicons.dev/icons?i=typescript" alt="typescript Icon"></li>
               <li><img src="https://skillicons.dev/icons?i=bootstrap" alt="Bootstrap Icon"></li>
+              <li><img src="https://skillicons.dev/icons?i=jquery" alt="jquery Icon"></li>
+              <li><img src="https://skillicons.dev/icons?i=npm" alt="npm Icon"></li>
+              <li><img src="https://skillicons.dev/icons?i=figma" alt="figma Icon"></li>
+              <li><img src="https://skillicons.dev/icons?i=angular" alt="Angular Icon"></li>
+            </ul><br>
+            <h3>Tools I use</h3>
+            <ul>
+              <li><img src="https://skillicons.dev/icons?i=vscode" alt="vscode Icon"></li>
+              <li><img src="https://skillicons.dev/icons?i=eclipse" alt="eclipse Icon"></li>
+              <li><img src="https://skillicons.dev/icons?i=heroku" alt="heroku Icon"></li>
+              <li><img src="https://skillicons.dev/icons?i=sublime" alt="sublime Icon"></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="about" class="section">
-    <div class="container">
-      <h1 class="text-center mb-5"><b>About Me</b></h1>
-      <div class="row">
-        <div class="col-lg-6 mb-4">
-          <div class="about-content">
-            <h3>Who I am</h3>
-            <p>Hi, I'm Saima, a passionate web programmer based in Mumbai, India. I'm dedicated to expanding my skills
-              and knowledge in web development through a series of well-structured mini projects. These projects help me
-              focus on practical applications and efficient development practices.</p>
-            <p>My journey in web development began 2 years ago, and since then, I've been committed to continuous
-              learning, keeping up with the latest technologies and industry best practices.</p>
-            <a href="#contact" class="btn btn-custom mt-3">Let's Connect</a>
-          </div>
-        </div>
-        <div class="col-lg-6 mb-4">
-          <div class="skills-container">
-            <h3 class="mb-4">My Skills</h3>
-            <div class="skill-item">
-              <div class="skill-info">
-                <span>HTML</span>
-                <span>99%</span>
-              </div>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 99%" aria-valuenow="99" aria-valuemin="0"
-                  aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-info">
-                <span>CSS</span>
-                <span>95%</span>
-              </div>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0"
-                  aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-info">
-                <span>JavaScript</span>
-                <span>90%</span>
-              </div>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-                  aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-info">
-                <span>Bootstrap</span>
-                <span>90%</span>
-              </div>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-                  aria-valuemax="100"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-info">
-                <span>Java</span>
-                <span>80%</span>
-              </div>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-                  aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+<section id="projects" class="section">
+  <div class="container">
+    <h1 class="text-center mb-5"><b>My Projects</b></h1>
+    <div class="projects-coming-soon">
+      <p>New projects coming soon.. 🤠</p>
     </div>
-  </section>
-  <section id="projects" class="section bg-light">
-    <div class="container">
-      <h1 class="text-center mb-5"><b>My Projects</b></h1>
-      <div class="projects-coming-soon">
-        <p>New projects coming soon.. 🤠</p>
-      </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="contact-content">
+    <h2>Looking to boost <span>your online </span>presence to the <br>next level?</h2>
+    <p>Connect with me today, and let's explore how to bring your ideas to fruition.</p>
+    <a href="mailto:saima.sidd223@gmail.com" class="btn-custom">Let's get in touch <i class="bi bi-send"></i></a>
+    <div class="social-icons mt-4">
+      <a href="https://github.com/Saima223" target="_blank"><i class="bi bi-github"></i></a>
+      <a href="https://www.linkedin.com/in/saima223/" target="_blank"><i class="bi bi-linkedin"></i></a>
     </div>
-  </section>
-  
-  <section id="contact">
-    <div class="container">
-      <h2>Looking to boost <span>your online </span>presence to the <br>next level?</h2>
-      <p>Connect with me today, and let's explore how to bring your ideas to fruition.</p>
-      <a href="mailto:saima.sidd223@gmail.com" class="btn-custom">Let's get in touch <i class="bi bi-send"></i></a>
-      <div class="social-icons">
-        <a href="https://github.com/Saima223" target="_blank"><i class="bi bi-github"></i></a>
-        <a href="https://www.linkedin.com/in/saima223/" target="_blank"><i class="bi bi-linkedin"></i></a>
-      </div>
-    </div>
-    <p class="footer-text">Made with ❤️ by Saima</p>
-  </section>
+  </div>
+  <p class="footer-text">Made with ❤️ by Saima</p>
+</section>
 <script src="app.js"></script>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
