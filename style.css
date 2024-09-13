@@ -15,7 +15,7 @@ body {
 }
 
 .section {
-  padding: 80px 0;
+  padding: 60px 0;
 }
 
 /* Dark mode styles */
@@ -26,11 +26,12 @@ body.dark-mode {
 
 /* Hero Section */
 .hero {
-  height: 650px;
+  min-height: 100vh;
   background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));
   display: flex;
   align-items: center;
   transition: background 0.5s ease;
+  padding-top: 80px;
 }
 
 body.dark-mode .hero {
@@ -58,8 +59,8 @@ body.dark-mode .navbar.scrolled {
 }
 
 .navbar-brand {
-    text-decoration: none;
-    color: #7644ff;
+  text-decoration: none;
+  color: #7644ff;
 }
 
 .dark-mode .navbar-brand {
@@ -116,7 +117,6 @@ body.dark-mode .nav-link {
 }
 
 /* Hero Content */
-
 .hero-content {
   width: 100%;
 }
@@ -130,9 +130,9 @@ body.dark-mode .nav-link {
 }
 
 .hero-content h1 {
-  font-size: 60px;
+  font-size: 48px;
   font-weight: 700;
-  margin: 20px 0 ;
+  margin: 20px 0;
   transition: color 0.5s ease;
 }
 
@@ -174,8 +174,6 @@ body.dark-mode .hero-content p {
   display: flex;
   flex-wrap: wrap;
   gap: 1.4rem;
-  position: relative;
-  top: 70px;
 }
 
 .social-icons a {
@@ -205,18 +203,6 @@ body.dark-mode .hero-content p {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease, color 0.3s ease;
   height: 100%;
 }
-
-ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-li {
-  cursor: pointer;
-}
-
 
 body.dark-mode .about-content,
 body.dark-mode .tech-stack,
@@ -255,7 +241,7 @@ body.dark-mode .skills-container h3 {
 }
 
 .about-content p,
-.contact-content p{
+.contact-content p {
   color: #555;
   margin-bottom: 15px;
   transition: color 0.3s ease;
@@ -270,36 +256,12 @@ body.dark-mode .contact-content p {
   color: #7644ff;
 }
 
-/* Skills */
-.skill-item {
-  margin-bottom: 20px;
+/* Tech Stack */
+.logos img {
+  max-width: 100%;
+  height: auto;
 }
 
-.skill-info {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 5px;
-  color: #555;
-  transition: color 0.3s ease;
-}
-
-body.dark-mode .skill-info {
-  color: #c0c0c0;
-}
-
-/* Projects */
-
-body.dark-mode .projects-coming-soon {
-  font-size: 24px;
-  font-weight: 600;
-  color: #f8f9fa;
-  text-align: center;
-  padding: 60px 20px;
-  background-color: #333;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0
-}
 /* Projects */
 .projects-coming-soon {
   font-size: 24px;
@@ -310,7 +272,13 @@ body.dark-mode .projects-coming-soon {
   background-color: #f8f9fa;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode .projects-coming-soon {
+  color: #f8f9fa;
+  background-color: #333;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .projects-coming-soon p {
@@ -322,7 +290,6 @@ body.dark-mode .projects-coming-soon {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
-
 /* Contact Section */
 #contact {
   background-color: white;
@@ -331,9 +298,11 @@ body.dark-mode .projects-coming-soon {
   position: relative;
 }
 
-body.dark-mode #contact{
+body.dark-mode #contact {
   background-color: #000;
-} 
+  color: white;
+}
+
 #contact .contact-content {
   text-align: center;
 }
@@ -341,9 +310,14 @@ body.dark-mode #contact{
 #contact h2 {
   font-weight: 700;
   margin-bottom: 20px;
+  color: #000;
 }
 
-#contact h2 span {
+body.dark-mode #contact h2 {
+  color: #fff;
+}
+
+#contact span {
   color: #7644ff;
 }
 
@@ -355,18 +329,14 @@ body.dark-mode #contact{
 
 .footer-text {
   position: absolute;
-  bottom: 39px;
+  bottom: 20px;
   right: 20px;
   font-size: 14px;
   opacity: 0.9;
 }
 
-body.dark-mode .footer-text{
+body.dark-mode .footer-text {
   color: #fff;
-  opacity: 0.9;
-  position: absolute;
-  bottom: 39px;
-  right: 20px;
 }
 
 /* Animations */
@@ -419,11 +389,11 @@ body.dark-mode .footer-text{
   border-radius: 50%;
 }
 
-.dark-mode-input:checked + .dark-mode-label {
+.dark-mode-input:checked+.dark-mode-label {
   background-color: #7644ff;
 }
 
-.dark-mode-input:checked + .dark-mode-label:before {
+.dark-mode-input:checked+.dark-mode-label:before {
   transform: translateX(26px);
 }
 
@@ -441,10 +411,91 @@ body.dark-mode .footer-text{
   opacity: 0;
 }
 
-.dark-mode-input:checked + .dark-mode-label #sunIcon {
+.dark-mode-input:checked+.dark-mode-label #sunIcon {
   opacity: 0;
 }
 
-.dark-mode-input:checked + .dark-mode-label #moonIcon {
+.dark-mode-input:checked+.dark-mode-label #moonIcon {
   opacity: 1;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .nav-link {
+    margin: 10px 0;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .btn-custom,
+  .dark-mode-toggle {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding: 40px 0;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  .about-content,
+  .tech-stack,
+  .skills-container {
+    padding: 20px;
+  }
+
+  .projects-coming-soon {
+    font-size: 20px;
+    padding: 40px 15px;
+  }
+
+  #contact h2 {
+    font-size: 24px;
+  }
+
+  #contact p {
+    font-size: 16px;
+  }
+
+  .footer-text {
+    position: static;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .hero-content .title {
+    font-size: 16px;
+  }
+
+  .hero-content h1 {
+    font-size: 24px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .logos .row {
+    justify-content: center;
+  }
 }
